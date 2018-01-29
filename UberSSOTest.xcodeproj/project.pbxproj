@@ -13,9 +13,12 @@
 		9B6FBEC2201FCED700FF2708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FBEC1201FCED700FF2708 /* Assets.xcassets */; };
 		9B6FBEC5201FCED700FF2708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6FBEC3201FCED700FF2708 /* LaunchScreen.storyboard */; };
 		9B6FBEC8201FCED700FF2708 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6FBEC7201FCED700FF2708 /* main.m */; };
+		D32589BCB1681F839970E257 /* Pods_UberSSOTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27534335271C7D2D43B7867C /* Pods_UberSSOTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B7A44C46159B683D3898357 /* Pods-UberSSOTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberSSOTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-UberSSOTest/Pods-UberSSOTest.release.xcconfig"; sourceTree = "<group>"; };
+		27534335271C7D2D43B7867C /* Pods_UberSSOTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberSSOTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6FBEB5201FCED700FF2708 /* UberSSOTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberSSOTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6FBEB8201FCED700FF2708 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B6FBEB9201FCED700FF2708 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		9B6FBEC4201FCED700FF2708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B6FBEC6201FCED700FF2708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B6FBEC7201FCED700FF2708 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB1C2BE8BE4E792D2097D5AD /* Pods-UberSSOTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberSSOTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UberSSOTest/Pods-UberSSOTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32589BCB1681F839970E257 /* Pods_UberSSOTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8897F429B240EFC50D47F11C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27534335271C7D2D43B7867C /* Pods_UberSSOTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B6FBEAC201FCED700FF2708 = {
 			isa = PBXGroup;
 			children = (
 				9B6FBEB7201FCED700FF2708 /* UberSSOTest */,
 				9B6FBEB6201FCED700FF2708 /* Products */,
+				F23C6D9F76189113450C4B05 /* Pods */,
+				8897F429B240EFC50D47F11C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,15 @@
 			path = UberSSOTest;
 			sourceTree = "<group>";
 		};
+		F23C6D9F76189113450C4B05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB1C2BE8BE4E792D2097D5AD /* Pods-UberSSOTest.debug.xcconfig */,
+				0B7A44C46159B683D3898357 /* Pods-UberSSOTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B6FBECB201FCED700FF2708 /* Build configuration list for PBXNativeTarget "UberSSOTest" */;
 			buildPhases = (
+				9C79C7DD058E212CB480450E /* [CP] Check Pods Manifest.lock */,
 				9B6FBEB1201FCED700FF2708 /* Sources */,
 				9B6FBEB2201FCED700FF2708 /* Frameworks */,
 				9B6FBEB3201FCED700FF2708 /* Resources */,
+				A9AD24729384B6738611FF7E /* [CP] Embed Pods Frameworks */,
+				4F6C987DB1F1DA7AF18EE4B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F6C987DB1F1DA7AF18EE4B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UberSSOTest/Pods-UberSSOTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C79C7DD058E212CB480450E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UberSSOTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9AD24729384B6738611FF7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UberSSOTest/Pods-UberSSOTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/UberCore/UberCore.framework",
+				"${BUILT_PRODUCTS_DIR}/UberRides/UberRides.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UberCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UberRides.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UberSSOTest/Pods-UberSSOTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B6FBEB1201FCED700FF2708 /* Sources */ = {
@@ -218,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -276,29 +359,35 @@
 		};
 		9B6FBECC201FCED700FF2708 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB1C2BE8BE4E792D2097D5AD /* Pods-UberSSOTest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG7V22KHE5;
 				INFOPLIST_FILE = UberSSOTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.migo.apps.UberSSOTest;
+				PRODUCT_BUNDLE_IDENTIFIER = co.migo.apps.uberssotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9B6FBECD201FCED700FF2708 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B7A44C46159B683D3898357 /* Pods-UberSSOTest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG7V22KHE5;
 				INFOPLIST_FILE = UberSSOTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.migo.apps.UberSSOTest;
+				PRODUCT_BUNDLE_IDENTIFIER = co.migo.apps.uberssotest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
